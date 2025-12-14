@@ -37,7 +37,7 @@ class _BookingScreenState extends State<BookingScreen> {
     }
     Navigator.push(context, MaterialPageRoute(builder: (context) => ConfirmationScreen(
       booking: Booking(
-        clientName: _nameController.text,
+        customerName: _nameController.text,
         serviceName: _selectedService!.name,
         date: _selectedDate!,
         time: _selectedTime!,
