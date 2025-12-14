@@ -39,7 +39,7 @@ class _BookingScreenState extends State<BookingScreen> {
       booking: Booking(
         customerName: _nameController.text,
         serviceName: _selectedService!.name,
-        date: _selectedDate!,
+        date: '${_selectedDate.day}/${_selectedDate.month}/${_selectedDate.year}'!,
         time: _selectedTime!,
       ),
     )));
